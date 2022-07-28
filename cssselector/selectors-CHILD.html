@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selectors</title>
+  <style>
+    p {
+      background-color: #cecaca;
+      padding: 10px;
+      margin: 10px;
+      width: 200px;
+      height: 100px;
+      float: left;
+    }
+
+    /* selects only tags that have both "city" and "usa" classes that are present inside the ".largecities" div tag */
+    .largecities .city.india {
+      border: 3px solid red;
+      background-color: aquamarine;
+    }
+    .smallcitites .city.india {
+      border: 3px solid red;
+      background-color: blue;
+    }
+    .smallcities {
+      clear: left;
+      height: 300px;
+    }
+
+    .largecities {
+      height: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="largecities">
+    <p class="city usa">New York</p>
+    <p class="city usa">Boston</p>
+    <p class="city india">New Delhi</p>
+    <p class="city india">Bangluru</p>
+  </div>
+  <div class="smallcitites">
+    <p class="city usa">Anchorage</p>
+    <p class="city usa">Boulder</p>
+    <p class="city india">Nagpur</p>
+    <p class="city india">Kanpur</p>
+  </div>
+</body>
+
+</html>
