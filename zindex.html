@@ -1,0 +1,53 @@
+<!--
+
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.wrapper {
+  position: relative;
+}
+
+.dashed-box {
+  position: absolute;
+  z-index: 3;
+  border: dashed;
+width:200px;
+height: 200px;
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+.gold-box {
+  position: absolute;
+  z-index: 2; /* put .gold-box above .green-box and .dashed-box */
+  background: gold;
+  width:200px;
+height: 200px;
+  left: 60px;
+  top: 3em;
+}
+.green-box {
+  position: absolute;
+  z-index: 1; /* put .green-box above .dashed-box */
+  background: lightgreen;
+  width:200px;
+height: 200px;
+  
+top: 5em;
+
+  opacity: 0.9;
+}
+</style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="dashed-box">Dashed box</div>
+        <div class="gold-box">Gold box</div>
+        <div class="green-box">Green box</div>
+      </div>
+
+</body>
+</html>
